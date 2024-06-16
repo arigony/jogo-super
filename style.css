@@ -1,8 +1,21 @@
-body {
+body, html {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+}
+
+#ruffle {
+    width: 100%;
+    height: 100vh; /* 100% da altura da visualização */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #playbutton {
@@ -39,5 +52,21 @@ body {
         width: 100%;
         height: auto;
         max-width: 100%;
+    }
+}
+
+/* Modo retrato */
+@media only screen and (orientation: portrait) {
+    #ruffle {
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+/* Modo paisagem */
+@media only screen and (orientation: landscape) {
+    #ruffle {
+        height: 100vh;
+        width: 100%;
     }
 }
