@@ -1,4 +1,4 @@
-body{
+body {
     background-image: url("images_src/football_img.jpg");
     background-size: cover;
     display: flex;
@@ -7,9 +7,10 @@ body{
     height: 100vh;
     margin: 0;
     overflow: hidden;
+    flex-direction: column;
 }
 
-#playbutton{
+#playbutton {
     width: 200px;
     height: 50px;
     border: none;
@@ -18,7 +19,7 @@ body{
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    background-color: #3498db; 
+    background-color: #3498db;
 }
 
 #playbutton:hover {
@@ -37,5 +38,10 @@ body{
 @media (orientation: landscape) {
     body {
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        overflow: auto;
     }
 }
