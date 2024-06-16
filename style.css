@@ -13,7 +13,7 @@ body, html {
 
 #ruffle {
     width: 100%;
-    height: 120vh; /* 120% da altura da visualização */
+    height: 150vh; /* 150% da altura da visualização */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,7 +60,7 @@ body, html {
 /* Modo retrato */
 @media only screen and (orientation: portrait) {
     #ruffle {
-        height: 120vh; /* Ajuste para 120% da altura da visualização */
+        height: 150vh; /* Ajuste para 150% da altura da visualização */
         width: 100%;
         overflow: auto; /* Permitir rolagem */
     }
@@ -69,7 +69,7 @@ body, html {
 /* Modo paisagem */
 @media only screen and (orientation: landscape) {
     #ruffle {
-        height: 120vh; /* Ajuste para 120% da altura da visualização */
+        height: 150vh; /* Ajuste para 150% da altura da visualização */
         width: 100%;
         overflow: auto; /* Permitir rolagem */
     }
@@ -78,7 +78,7 @@ body, html {
 /* Ajuste para desktop */
 @media (min-width: 1024px) {
     #ruffle {
-        height: 120vh; /* 120% da altura da visualização para desktops */
+        height: 150vh; /* 150% da altura da visualização para desktops */
         overflow: auto; /* Permitir rolagem */
     }
 }
