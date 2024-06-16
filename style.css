@@ -33,6 +33,13 @@ body {
         height: 40px;
         font-size: 14px;
     }
+
+    body {
+        flex-direction: column;
+        overflow: auto;
+        height: auto;
+        padding: 20px;
+    }
 }
 
 @media (orientation: landscape) {
