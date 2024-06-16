@@ -60,7 +60,7 @@ body, html {
 /* Modo retrato */
 @media only screen and (orientation: portrait) {
     #ruffle {
-        height: 75vh; /* Ajuste para 85% da altura da visualização */
+        height: 85vh; /* Ajuste para 85% da altura da visualização */
         width: 100%;
         overflow: auto; /* Adicionar rolagem caso necessário */
     }
@@ -69,7 +69,7 @@ body, html {
 /* Modo paisagem */
 @media only screen and (orientation: landscape) {
     #ruffle {
-        height: 75vh; /* Ajuste para 85% da altura da visualização */
+        height: 85vh; /* Ajuste para 85% da altura da visualização */
         width: 100%;
         overflow: auto; /* Adicionar rolagem caso necessário */
     }
@@ -78,7 +78,7 @@ body, html {
 /* Ajuste para desktop */
 @media (min-width: 1024px) {
     #ruffle {
-        height: 75vh; /* 85% da altura da visualização para desktops */
+        height: 85vh; /* 85% da altura da visualização para desktops */
         overflow: auto; /* Adicionar rolagem caso necessário */
     }
 }
