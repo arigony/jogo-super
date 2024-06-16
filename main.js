@@ -19,3 +19,4 @@ window.addEventListener('resize', function() {
         ruffleElement.style.height = '100%';
     }
 });
+
