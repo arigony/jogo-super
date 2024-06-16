@@ -12,7 +12,7 @@ body, html {
 
 #ruffle {
     width: 100%;
-    height: 100vh; /* 100% da altura da visualização */
+    height: 85vh; /* 85% da altura da visualização */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,8 +30,8 @@ body, html {
 
 .gameloc {
     width: 100%;
-    max-width: 1200px; /* Ajustado para desktops maiores */
-    aspect-ratio: 16 / 9; /* Ajuste conforme necessário */
+    max-width: 800px;
+    aspect-ratio: 4 / 3;
     margin: 0 auto;
 }
 
@@ -47,11 +47,26 @@ body, html {
     }
 }
 
-@media (min-width: 1024px) {
+@media (orientation: landscape) {
     .gameloc {
         width: 100%;
-        max-width: 1200px;
-        aspect-ratio: 16 / 9;
-        margin: 0 auto;
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+/* Modo retrato */
+@media only screen and (orientation: portrait) {
+    #ruffle {
+        height: 85vh; /* Ajuste para 85% da altura da visualização */
+        width: 100%;
+    }
+}
+
+/* Modo paisagem */
+@media only screen and (orientation: landscape) {
+    #ruffle {
+        height: 85vh; /* Ajuste para 85% da altura da visualização */
+        width: 100%;
     }
 }
