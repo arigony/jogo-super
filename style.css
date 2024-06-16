@@ -8,14 +8,16 @@ body, html {
     justify-content: center;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    overflow: auto; /* Adicionar rolagem caso necessário */
 }
 
 #ruffle {
     width: 100%;
-    height: 85vh; /* 85% da altura da visualização */
+    height: 85vh; /* 85% da altura da visualização padrão */
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: auto; /* Adicionar rolagem caso necessário */
 }
 
 #playbutton {
@@ -58,15 +60,25 @@ body, html {
 /* Modo retrato */
 @media only screen and (orientation: portrait) {
     #ruffle {
-        height: 85vh; /* Ajuste para 85% da altura da visualização */
+        height: 75vh; /* Ajuste para 85% da altura da visualização */
         width: 100%;
+        overflow: auto; /* Adicionar rolagem caso necessário */
     }
 }
 
 /* Modo paisagem */
 @media only screen and (orientation: landscape) {
     #ruffle {
-        height: 85vh; /* Ajuste para 85% da altura da visualização */
+        height: 75vh; /* Ajuste para 85% da altura da visualização */
         width: 100%;
+        overflow: auto; /* Adicionar rolagem caso necessário */
+    }
+}
+
+/* Ajuste para desktop */
+@media (min-width: 1024px) {
+    #ruffle {
+        height: 75vh; /* 85% da altura da visualização para desktops */
+        overflow: auto; /* Adicionar rolagem caso necessário */
     }
 }
