@@ -12,11 +12,11 @@ body, html {
 
 #ruffle {
     width: 100%;
-    max-height: 85vh; /* 85% da altura da visualização */
+    height: 75vh; /* 75% da altura da visualização */
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: auto; /* Adicionar rolagem caso necessário */
+    overflow: hidden; /* Esconder o excesso */
 }
 
 #playbutton {
@@ -59,25 +59,25 @@ body, html {
 /* Modo retrato */
 @media only screen and (orientation: portrait) {
     #ruffle {
-        max-height: 85vh; /* Ajuste para 85% da altura da visualização */
+        height: 75vh; /* Ajuste para 75% da altura da visualização */
         width: 100%;
-        overflow: auto; /* Adicionar rolagem caso necessário */
+        overflow: hidden; /* Esconder o excesso */
     }
 }
 
 /* Modo paisagem */
 @media only screen and (orientation: landscape) {
     #ruffle {
-        max-height: 85vh; /* Ajuste para 85% da altura da visualização */
+        height: 75vh; /* Ajuste para 75% da altura da visualização */
         width: 100%;
-        overflow: auto; /* Adicionar rolagem caso necessário */
+        overflow: hidden; /* Esconder o excesso */
     }
 }
 
 /* Ajuste para desktop */
 @media (min-width: 1024px) {
     #ruffle {
-        max-height: 85vh; /* 85% da altura da visualização para desktops */
-        overflow: auto; /* Adicionar rolagem caso necessário */
+        height: 75vh; /* 75% da altura da visualização para desktops */
+        overflow: hidden; /* Esconder o excesso */
     }
 }
